@@ -23,9 +23,9 @@ _error_report() {
 trap '_error_report $LINENO' ERR
 
 # Variable list
-PROD_PROJECT=mco-emblem-prod    # GCP Project ID of the production project
-STAGE_PROJECT=mco-emblem-stage  # GCP Project ID of the staging project
-OPS_PROJECT=mco-emblem-ops      # GCP Project ID of the operations project
+export PROD_PROJECT=mco-emblem-prod    # GCP Project ID of the production project
+export STAGE_PROJECT=mco-emblem-stage  # GCP Project ID of the staging project
+export OPS_PROJECT=mco-emblem-ops      # GCP Project ID of the operations project
 #   SKIP_TRIGGERS           If set, don't set up build triggers
 #   SKIP_AUTH               If set, do not prompt to set up auth
 #   SKIP_BUILD              If set, do not build container images
